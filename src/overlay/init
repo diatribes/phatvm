@@ -1,0 +1,4 @@
+#!/bin/sh
+exec /dumb-init /etc/rc.sh
+#exec /sbin/init
+
