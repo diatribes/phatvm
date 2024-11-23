@@ -11,7 +11,7 @@ qemu-system-x86_64 \
     -enable-kvm \
     -serial mon:stdio \
     -append "console=ttyS0 panic=-1 vga=0x34B" \
-    -initrd "${OUTPUTPATH}"/rootfs-new.cpio \
+    -initrd "${OUTPUTPATH}"/rootfs.cpio \
     -nic user,model=virtio-net-pci \
     -virtfs local,path=${INPUTPATH},mount_tag=host0,security_model=none,id=host0 \
     -virtfs local,path=${OUTPUTPATH},mount_tag=host1,security_model=none,id=host1
